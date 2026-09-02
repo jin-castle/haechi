@@ -1,0 +1,21 @@
+mmwave_obstacle_mapper:
+  ros__parameters:
+    input_topic: /ti_mmwave/radar_scan_pcl
+    grid_topic: /firesight/mmwave/front_grid
+    marker_topic: /firesight/mmwave/front_markers
+    obstacle_topic: /firesight/mmwave/front_obstacles
+    frame_id: mmwave_front_link
+    range_min_m: 0.2
+    range_max_m: 1.5
+    fov_deg: 120.0
+    z_min_m: -0.6
+    z_max_m: 0.8
+    grid_resolution_m: 0.05
+    occupancy_value: 100
+    marker_lifetime_sec: 0.25
+    publish_empty_grid: true
+    stability_hit_increment: 0.6
+    stability_decay_per_frame: 0.18
+    stability_occupied_threshold: 1.0
+    stability_max_score: 2.0
+    min_cluster_cells: 1

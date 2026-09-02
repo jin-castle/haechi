@@ -1,0 +1,300 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://firesight.local/schemas/frame.schema.json",
+  "title": "FireSight future multimodal frame",
+  "description": "Future frame contract for aligning RGB, thermal, mmWave, and IMU/AHRS observations without implementing SLAM or live sensor fusion.",
+  "type": "object",
+  "required": [
+    "timestamp",
+    "frame_id",
+    "camera",
+    "thermal",
+    "mmwave",
+    "imu_ahrs",
+    "calibration"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "timestamp": {
+      "type": "string",
+      "description": "UTC capture timestamp in RFC3339 form."
+    },
+    "frame_id": {
+      "type": "string",
+      "description": "Stable frame identifier shared by all modalities for offline alignment."
+    },
+    "camera": {
+      "type": "object",
+      "required": [
+        "sensor_id",
+        "image_uri",
+        "intrinsics",
+        "extrinsics"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "sensor_id": {
+          "type": "string"
+        },
+        "image_uri": {
+          "type": "string"
+        },
+        "intrinsics": {
+          "type": "object",
+          "required": [
+            "model",
+            "width",
+            "height",
+            "fx",
+            "fy",
+            "cx",
+            "cy",
+            "distortion"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "model": {
+              "type": "string"
+            },
+            "width": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "height": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "fx": {
+              "type": "number"
+            },
+            "fy": {
+              "type": "number"
+            },
+            "cx": {
+              "type": "number"
+            },
+            "cy": {
+              "type": "number"
+            },
+            "distortion": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "extrinsics": {
+          "type": "object",
+          "required": [
+            "target_frame",
+            "translation_m",
+            "quaternion_xyzw"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "target_frame": {
+              "type": "string"
+            },
+            "translation_m": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            },
+            "quaternion_xyzw": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    },
+    "thermal": {
+      "type": "object",
+      "required": [
+        "sensor_id",
+        "frame_uri",
+        "encoding",
+        "width",
+        "height",
+        "temperature_unit"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "sensor_id": {
+          "type": "string"
+        },
+        "frame_uri": {
+          "type": "string"
+        },
+        "encoding": {
+          "type": "string"
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "temperature_unit": {
+          "type": "string",
+          "enum": [
+            "celsius",
+            "kelvin",
+            "raw_counts"
+          ]
+        }
+      }
+    },
+    "mmwave": {
+      "type": "object",
+      "required": [
+        "sensor_id",
+        "point_cloud"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "sensor_id": {
+          "type": "string"
+        },
+        "point_cloud": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "x_m",
+              "y_m",
+              "z_m",
+              "range_m",
+              "velocity_mps",
+              "bearing_rad",
+              "intensity"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "x_m": {
+                "type": "number"
+              },
+              "y_m": {
+                "type": "number"
+              },
+              "z_m": {
+                "type": "number"
+              },
+              "range_m": {
+                "type": "number",
+                "minimum": 0
+              },
+              "velocity_mps": {
+                "type": "number"
+              },
+              "bearing_rad": {
+                "type": "number"
+              },
+              "intensity": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    },
+    "imu_ahrs": {
+      "type": "object",
+      "required": [
+        "sensor_id",
+        "orientation_quaternion_xyzw",
+        "angular_velocity_radps",
+        "linear_acceleration_mps2",
+        "pose"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "sensor_id": {
+          "type": "string"
+        },
+        "orientation_quaternion_xyzw": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        "angular_velocity_radps": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        "linear_acceleration_mps2": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        "pose": {
+          "type": "object",
+          "required": [
+            "frame",
+            "translation_m",
+            "quaternion_xyzw"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "frame": {
+              "type": "string"
+            },
+            "translation_m": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            },
+            "quaternion_xyzw": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    },
+    "calibration": {
+      "type": "object",
+      "required": [
+        "calibration_id",
+        "camera_imu_reference",
+        "mmwave_reference",
+        "thermal_reference",
+        "valid_from",
+        "notes"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "calibration_id": {
+          "type": "string"
+        },
+        "camera_imu_reference": {
+          "type": "string"
+        },
+        "mmwave_reference": {
+          "type": "string"
+        },
+        "thermal_reference": {
+          "type": "string"
+        },
+        "valid_from": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

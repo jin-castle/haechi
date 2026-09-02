@@ -1,0 +1,47 @@
+{
+  "protocol": "fire360_video_profile_v1",
+  "profiles": [
+    {
+      "input_file": "02814 (2).MTS",
+      "osd_profile": "none",
+      "ignore_fire360_osd": false,
+      "reason": "No fixed badge or colorbar is visible; the frame is scene content."
+    },
+    {
+      "input_file": "02815 (2).MTS",
+      "osd_profile": "none",
+      "ignore_fire360_osd": false,
+      "reason": "No fixed badge or colorbar is visible; the frame is scene content."
+    },
+    {
+      "input_file": "02824 (2).MTS",
+      "osd_profile": "none",
+      "ignore_fire360_osd": false,
+      "reason": "No fixed badge or colorbar is visible; the frame is scene content."
+    },
+    {
+      "input_file": "GOPR8356 (2).MP4",
+      "osd_profile": "fire360_fixed_badge_colorbar",
+      "ignore_fire360_osd": true,
+      "reason": "Left badge and right numeric colorbar are part of the source overlay."
+    },
+    {
+      "input_file": "IFSI Video 4 (2).mp4",
+      "osd_profile": "fire360_fixed_badge_colorbar",
+      "ignore_fire360_osd": true,
+      "reason": "Left badge and right numeric colorbar are part of the source overlay."
+    },
+    {
+      "input_file": "IFSI Video 8 (2).mp4",
+      "osd_profile": "fire360_fixed_badge_colorbar",
+      "ignore_fire360_osd": true,
+      "reason": "Left badge and right numeric colorbar are part of the source overlay."
+    },
+    {
+      "input_file": "sample_3.MP4",
+      "osd_profile": "none",
+      "ignore_fire360_osd": false,
+      "reason": "No fixed badge or colorbar is visible; the right side is valid scene content."
+    }
+  ]
+}

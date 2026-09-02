@@ -1,0 +1,131 @@
+datasets:
+  - id: d-fire
+    name: D-Fire Dataset
+    url: https://github.com/gaia-solutions-on-demand/DFireDataset
+    modality: RGB image
+    label_task: fire and smoke object detection with YOLO labels
+    access_method: GitHub repository download
+    license_or_access_status: public repository; license not clearly declared; verify reuse terms before training
+    access_notes: Broad fire-smoke source, not indoor-specific; do not use as primary evidence for indoor AR overlay feasibility.
+    planned_use: optional detection adapter sanity check only after indoor datasets are prioritized
+    active: false
+  - id: indoor-fire-smoke-zenodo
+    name: Indoor Fire Smoke Dataset
+    url: https://zenodo.org/records/15826133
+    modality: RGB image
+    label_task: indoor fire and smoke object detection with bounding boxes
+    access_method: Zenodo record download
+    license_or_access_status: CC BY 4.0 on source record; retain attribution
+    access_notes: Contains 5000 real indoor images across homes offices and buildings with train validation test split.
+    planned_use: primary indoor fire-smoke detection baseline and smoke severity robustness source
+    active: true
+  - id: fire-smoke-indoor-roboflow
+    name: Fire Smoke Indoor
+    url: https://universe.roboflow.com/object-detection-7qn6l/fire-smoke-indoor
+    modality: RGB image
+    label_task: indoor fire and smoke object detection
+    access_method: Roboflow Universe export
+    license_or_access_status: CC BY 4.0 reported on Roboflow page; verify export terms and version before training
+    access_notes: Indoor fire-smoke dataset with multiple export formats; account or versioned export may be required.
+    planned_use: secondary indoor cross-check for detection and robustness evaluation
+    active: true
+  - id: smokebench
+    name: SmokeBench
+    url: https://github.com/QianfengY/SmokeBench
+    modality: paired RGB smoke-degraded and smoke-free images
+    label_task: real-world surveillance image desmoking benchmark
+    access_method: GitHub repository with linked dataset downloads
+    license_or_access_status: public research repository; verify dataset download terms before training or redistribution
+    access_notes: Provides paired smoke-degraded and clean images for early-stage fire scenes; not an object-detection bbox source.
+    planned_use: primary visibility restoration and edge overlay structure-retention evaluation source
+    active: true
+  - id: dfs
+    name: DFS Fire and Smoke Dataset
+    url: https://github.com/siyuanwu/DFS-FIRE-SMOKE-Dataset
+    modality: RGB image
+    label_task: fire smoke and other object detection with VOC annotations
+    access_method: GitHub repository download
+    license_or_access_status: public repository; license not clearly declared; verify reuse terms before training
+    access_notes: Candidate RGB dataset with explicit other class for false-positive analysis.
+    planned_use: detection baseline candidate and VOC-to-common-manifest ingestion
+    active: true
+  - id: cqu-annotated-fire-smoke
+    name: CQU Annotated Fire-Smoke Dataset
+    url: https://researchdata.edu.au/annotated-fire-smoke-using-yolo/3671995
+    modality: RGB image
+    label_task: annotated fire and smoke detection using YOLO
+    access_method: Research Data Australia landing page
+    license_or_access_status: public metadata; confirm dataset terms on source record before use
+    access_notes: Candidate supplemental RGB detection dataset if access is straightforward.
+    planned_use: optional detection baseline expansion
+    active: false
+  - id: fasdd
+    name: FASDD
+    url: https://github.com/openrsgis/FASDD
+    modality: RGB image
+    label_task: flame and smoke object detection
+    access_method: GitHub project with linked dataset source
+    license_or_access_status: open-access publication dataset; verify dataset portal license before training
+    access_notes: Large-scale flame and smoke candidate with heterogeneous scenes.
+    planned_use: optional large-scale detection training candidate after leakage and license review
+    active: false
+  - id: biped
+    name: BIPED via DexiNed
+    url: https://github.com/xavysp/DexiNed
+    modality: RGB image
+    label_task: edge detection benchmark labels
+    access_method: DexiNed repository references BIPED benchmark assets
+    license_or_access_status: public research benchmark reference; verify BIPED dataset license before redistribution
+    access_notes: Edge benchmark candidate for DexiNed and TEED comparison.
+    planned_use: edge baseline reference and optional edge evaluation target
+    active: true
+  - id: flir-adas
+    name: FLIR ADAS Thermal Dataset
+    url: https://www.flir.com/oem/adas/adas-dataset-form/
+    modality: thermal image and RGB image
+    label_task: road-scene object detection for ADAS classes
+    access_method: FLIR dataset form or mirrored research copies where allowed
+    license_or_access_status: access-gated vendor dataset; obey FLIR terms and do not redistribute
+    access_notes: Thermal detection candidate; not fire-specific but useful for thermal pipeline checks.
+    planned_use: nonblocking thermal detection adapter dry-run candidate
+    active: false
+  - id: fireman-uav-rgbt
+    name: FireMan-UAV-RGBT
+    url: https://zenodo.org/records/13732947
+    modality: paired RGB and thermal UAV imagery
+    label_task: fire-oriented RGBT perception candidate
+    access_method: Zenodo record download
+    license_or_access_status: CC BY 4.0 reported on source record; retain attribution
+    access_notes: Primary RGBT extension candidate for paired modality schema.
+    planned_use: thermal and RGBT extension dry-run after Todo 2
+    active: true
+  - id: wit-uas
+    name: WIT-UAS
+    url: https://github.com/castacks/WIT-UAS-Dataset
+    modality: LWIR thermal UAV imagery and ROS bags
+    label_task: crew and vehicle asset detection near prescribed wildland fires
+    access_method: GitHub repository with dataset instructions
+    license_or_access_status: public repository; verify dataset license and citation terms before training
+    access_notes: Wildland-fire thermal dataset focused on asset detection rather than fire segmentation.
+    planned_use: thermal false-positive and asset-detection reference
+    active: false
+  - id: mmodalfire
+    name: MmodalFire
+    url: https://springernature.figshare.com/articles/dataset/MmodalFire_A_Multimodal_Dataset_Comprising_Video_and_Physical_Sensing_Data_for_Detecting_Indoor_Fires/28804448
+    modality: video and physical sensor streams
+    label_task: indoor fire detection from multimodal sensing
+    access_method: Figshare record download
+    license_or_access_status: public Figshare record; confirm article-level license and attribution terms
+    access_notes: Indoor multimodal candidate for future non-image sensor context.
+    planned_use: future multimodal context only; not a Phase 1 image training source
+    active: false
+  - id: indoor-firerescue-radar
+    name: Indoor FireRescue Radar
+    url: https://ieeexplore.ieee.org/document/11246924/
+    modality: RGB camera LiDAR and 4D mmWave radar
+    label_task: hazardous indoor perception with 3D object annotations
+    access_method: IEEE paper landing page; dataset access to be confirmed
+    license_or_access_status: paper identified; dataset access and reuse terms unresolved
+    access_notes: Future mmWave candidate only until dataset access and license are confirmed.
+    planned_use: future mmWave schema reference and access-risk tracker
+    active: false

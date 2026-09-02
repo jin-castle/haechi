@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>thermal_camera</name>
+  <version>0.0.1</version>
+  <description>ROS 2 node for thermal camera</description>
+  <maintainer email="edison041812@gmail.com">DS JUNG</maintainer>
+  <license>Apache License 2.0</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <depend>rclpy</depend>
+  <depend>cv_bridge</depend>
+  <depend>sensor_msgs</depend>
+  <depend>image_transport</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

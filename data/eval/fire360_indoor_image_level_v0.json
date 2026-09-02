@@ -1,0 +1,102 @@
+{
+  "classes": ["fire", "smoke", "door", "person", "exit", "obstacle"],
+  "label_level": "image_multi_label_v0",
+  "label_policy": {
+    "door": "visible door, doorway, or door-like interior boundary",
+    "exit": "visible navigable egress opening or doorway cue, not necessarily an exit sign",
+    "obstacle": "visible object, body, furniture, crib, wall edge, or gear that could obstruct navigation",
+    "source_note": "fire/smoke photo labels use Indoor Fire Smoke YOLO class 0=fire and 1=smoke when applicable; Fire360 frames and operational classes are manually image-level labeled from local review sheets."
+  },
+  "items": [
+    {
+      "image": "photo__test__-2022-04-05-195954_png_jpg.rf.b71c34594b9ab92af9c05d88f6779b30.jpg",
+      "labels": ["fire"],
+      "source_type": "photo_image"
+    },
+    {
+      "image": "photo__train__-2022-04-05-195924_png_jpg.rf.266e62bd01acfb308a344ab027ce5031.jpg",
+      "labels": ["fire", "door", "person"],
+      "source_type": "photo_image"
+    },
+    {
+      "image": "photo__valid__1014_jpg.rf.ee0255915e03654e8e164e38bbb8d49b.jpg",
+      "labels": ["fire", "smoke"],
+      "source_type": "photo_image"
+    },
+    {
+      "image": "photo__test__000039_jpg.rf.29e227f738bbc4e32317c0d77b53bafd.jpg",
+      "labels": ["smoke"],
+      "source_type": "photo_image"
+    },
+    {
+      "image": "photo__test__000122_jpg.rf.fe13b3583b657df230661e8fd753a238.jpg",
+      "labels": ["fire", "smoke"],
+      "source_type": "photo_image"
+    },
+    {
+      "image": "photo__valid__000692_jpg.rf.64524cf258cb55a892782007e41006f5.jpg",
+      "labels": ["smoke", "door", "exit"],
+      "source_type": "photo_image"
+    },
+    {
+      "image": "photo__valid__000838_jpg.rf.6995f161450456670a68691f8c5963b9.jpg",
+      "labels": ["smoke", "person", "obstacle"],
+      "source_type": "photo_image"
+    },
+    {
+      "image": "video__clip_02814_frame_000028.jpg",
+      "labels": ["fire", "smoke", "person", "obstacle"],
+      "source_type": "video_frame"
+    },
+    {
+      "image": "video__clip_02814_frame_000172.jpg",
+      "labels": ["fire", "smoke", "person", "obstacle"],
+      "source_type": "video_frame"
+    },
+    {
+      "image": "video__clip_02815_frame_000013.jpg",
+      "labels": ["fire", "smoke", "person", "obstacle"],
+      "source_type": "video_frame"
+    },
+    {
+      "image": "video__clip_02824_frame_000139.jpg",
+      "labels": ["smoke", "person", "obstacle"],
+      "source_type": "video_frame"
+    },
+    {
+      "image": "video__gopr8356_frame_000045.jpg",
+      "labels": ["fire", "smoke", "person", "obstacle"],
+      "source_type": "video_frame"
+    },
+    {
+      "image": "video__gopr8356_frame_000409.jpg",
+      "labels": ["fire", "smoke", "person", "obstacle"],
+      "source_type": "video_frame"
+    },
+    {
+      "image": "video__ifsi_video_4_frame_000056.jpg",
+      "labels": ["smoke", "person", "obstacle"],
+      "source_type": "video_frame"
+    },
+    {
+      "image": "video__ifsi_video_4_frame_000397.jpg",
+      "labels": ["smoke", "person", "obstacle"],
+      "source_type": "video_frame"
+    },
+    {
+      "image": "video__ifsi_video_8_frame_000120.jpg",
+      "labels": ["door", "person", "exit"],
+      "source_type": "video_frame"
+    },
+    {
+      "image": "video__ifsi_video_8_frame_000420.jpg",
+      "labels": ["door", "exit", "obstacle"],
+      "source_type": "video_frame"
+    },
+    {
+      "image": "video__ifsi_video_8_frame_000600.jpg",
+      "labels": ["door", "exit", "obstacle"],
+      "source_type": "video_frame"
+    }
+  ]
+}

@@ -1,0 +1,406 @@
+{
+  "annotation_status": "draft_single_agent",
+  "human_review_status": "required_before_training_or_benchmark",
+  "classes": [
+    "door",
+    "person",
+    "exit",
+    "obstacle"
+  ],
+  "items": [
+    {
+      "image": "photo__test__-2022-04-05-195954_png_jpg.rf.b71c34594b9ab92af9c05d88f6779b30.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": []
+    },
+    {
+      "image": "photo__train__-2022-04-05-195924_png_jpg.rf.266e62bd01acfb308a344ab027ce5031.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": [
+        "door",
+        "exit",
+        "person"
+      ]
+    },
+    {
+      "image": "photo__valid__1014_jpg.rf.ee0255915e03654e8e164e38bbb8d49b.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": []
+    },
+    {
+      "image": "photo__test__000039_jpg.rf.29e227f738bbc4e32317c0d77b53bafd.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": []
+    },
+    {
+      "image": "photo__test__000122_jpg.rf.fe13b3583b657df230661e8fd753a238.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": []
+    },
+    {
+      "image": "photo__valid__000692_jpg.rf.64524cf258cb55a892782007e41006f5.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": [
+        "door",
+        "exit"
+      ]
+    },
+    {
+      "image": "photo__valid__000838_jpg.rf.6995f161450456670a68691f8c5963b9.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": [
+        "obstacle"
+      ]
+    },
+    {
+      "image": "photo__test__000045_jpg.rf.e131acc8dd73826aee3ab5af488c2e1b.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": []
+    },
+    {
+      "image": "photo__test__000050_jpg.rf.3567e9ee9340731c5c619ba64a1da758.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": []
+    },
+    {
+      "image": "photo__test__000051_jpg.rf.f0f8cb8a06bd5390714ff417589737c5.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": []
+    },
+    {
+      "image": "photo__test__000127_jpg.rf.d1e65bb626a199c7aaca0c5366f6d480.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": []
+    },
+    {
+      "image": "photo__test__000133_jpg.rf.247604eda371adbcff2a6ef91d50d72a.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": []
+    },
+    {
+      "image": "photo__test__000149_jpg.rf.5117b01daa9e9b2434c25e081d52d04d.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": []
+    },
+    {
+      "image": "photo__test__000155_jpg.rf.a5b0e3313e42c55290b1c9ed71902934.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": []
+    },
+    {
+      "image": "photo__test__000155_jpg.rf.d9ce50e4a2964f8407dfb170ab1fdbe7.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": []
+    },
+    {
+      "image": "photo__test__000166_jpg.rf.40d8bf103906fff3ce55fd9e7a6fc6b9.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": []
+    },
+    {
+      "image": "photo__train__000017_jpg.rf.4782338d3922c776f98fb4139d3a753f.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": []
+    },
+    {
+      "image": "photo__train__000017_jpg.rf.fce207c07dd1921fc94f7a7d6ad96f49.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": []
+    },
+    {
+      "image": "photo__train__000023_jpg.rf.6c4a4869aecf6e7e97f9824d67d7543d.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": []
+    },
+    {
+      "image": "photo__train__000023_jpg.rf.a41c64205cdb3fd2abeef3dbf7ca03cc.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": []
+    },
+    {
+      "image": "photo__train__000023_jpg.rf.bb7babb60bea99b0bde061620d615ddc.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": []
+    },
+    {
+      "image": "photo__train__000034_jpg.rf.1ca33b25c227dd27f9839c9b66d20555.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": []
+    },
+    {
+      "image": "photo__train__000034_jpg.rf.3d31040270780a561444cdc959e3780c.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": []
+    },
+    {
+      "image": "photo__train__000034_jpg.rf.46438e8f506eef6335721215c8c3d1ce.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": []
+    },
+    {
+      "image": "photo__train__000039_jpg.rf.224bee27908051063614fa70924a60da.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": []
+    },
+    {
+      "image": "photo__train__000045_jpg.rf.582c9b4680f37cbf2733b3f8a5eb329a.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": []
+    },
+    {
+      "image": "photo__train__000050_jpg.rf.756ba9307d7b45f0efc45ed7ea87b715.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": []
+    },
+    {
+      "image": "photo__valid__000017_jpg.rf.4b7bdfbcab6309ff7760110536cb0dbf.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": []
+    },
+    {
+      "image": "photo__valid__000045_jpg.rf.b673c96a9448bdb6f99f836cea2dec19.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": []
+    },
+    {
+      "image": "photo__valid__000056_jpg.rf.6c6b95813dc6605dc4479628c2e4abfc.jpg",
+      "source_type": "photo_image",
+      "bbox_labels": []
+    },
+    {
+      "image": "video__clip_02814_frame_000028.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "obstacle",
+        "person"
+      ]
+    },
+    {
+      "image": "video__clip_02814_frame_000172.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "obstacle",
+        "person"
+      ]
+    },
+    {
+      "image": "video__clip_02815_frame_000013.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "obstacle",
+        "person"
+      ]
+    },
+    {
+      "image": "video__clip_02824_frame_000139.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "obstacle"
+      ]
+    },
+    {
+      "image": "video__gopr8356_frame_000045.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "obstacle"
+      ]
+    },
+    {
+      "image": "video__gopr8356_frame_000409.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "obstacle",
+        "person"
+      ]
+    },
+    {
+      "image": "video__ifsi_video_4_frame_000056.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "obstacle",
+        "person"
+      ]
+    },
+    {
+      "image": "video__ifsi_video_4_frame_000397.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "obstacle"
+      ]
+    },
+    {
+      "image": "video__ifsi_video_8_frame_000120.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "door",
+        "exit",
+        "obstacle",
+        "person"
+      ]
+    },
+    {
+      "image": "video__ifsi_video_8_frame_000420.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "door",
+        "exit",
+        "obstacle"
+      ]
+    },
+    {
+      "image": "video__ifsi_video_8_frame_000600.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "door",
+        "exit",
+        "obstacle"
+      ]
+    },
+    {
+      "image": "video__clip_02814_frame_000057.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "obstacle",
+        "person"
+      ]
+    },
+    {
+      "image": "video__clip_02814_frame_000143.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "obstacle",
+        "person"
+      ]
+    },
+    {
+      "image": "video__clip_02814_frame_000229.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "obstacle",
+        "person"
+      ]
+    },
+    {
+      "image": "video__clip_02815_frame_000027.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "obstacle"
+      ]
+    },
+    {
+      "image": "video__clip_02815_frame_000054.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "obstacle"
+      ]
+    },
+    {
+      "image": "video__clip_02815_frame_000096.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "obstacle"
+      ]
+    },
+    {
+      "image": "video__clip_02824_frame_000023.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "obstacle",
+        "person"
+      ]
+    },
+    {
+      "image": "video__clip_02824_frame_000069.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "obstacle"
+      ]
+    },
+    {
+      "image": "video__clip_02824_frame_000162.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "obstacle"
+      ]
+    },
+    {
+      "image": "video__clip_02824_frame_000231.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "obstacle"
+      ]
+    },
+    {
+      "image": "video__gopr8356_frame_000136.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "obstacle",
+        "person"
+      ]
+    },
+    {
+      "image": "video__gopr8356_frame_000272.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "obstacle",
+        "person"
+      ]
+    },
+    {
+      "image": "video__gopr8356_frame_000363.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "obstacle"
+      ]
+    },
+    {
+      "image": "video__ifsi_video_4_frame_000170.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "obstacle"
+      ]
+    },
+    {
+      "image": "video__ifsi_video_4_frame_000340.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "obstacle"
+      ]
+    },
+    {
+      "image": "video__ifsi_video_4_frame_000511.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "obstacle"
+      ]
+    },
+    {
+      "image": "video__ifsi_video_8_frame_000180.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "door",
+        "exit",
+        "obstacle"
+      ]
+    },
+    {
+      "image": "video__ifsi_video_8_frame_000300.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "door",
+        "exit",
+        "obstacle",
+        "person"
+      ]
+    },
+    {
+      "image": "video__ifsi_video_8_frame_000540.jpg",
+      "source_type": "video_frame",
+      "bbox_labels": [
+        "door",
+        "exit",
+        "obstacle"
+      ]
+    }
+  ]
+}

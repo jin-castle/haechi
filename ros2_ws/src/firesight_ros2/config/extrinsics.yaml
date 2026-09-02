@@ -1,0 +1,25 @@
+frames:
+  glasses_frame:
+    description: AR glasses bridge frame. X forward, Y left, Z up.
+  mmwave_front_link:
+    parent: glasses_frame
+    translation_m:
+      x: 0.035
+      y: 0.0
+      z: -0.015
+    rotation_rpy_deg:
+      roll: 0.0
+      pitch: 0.0
+      yaw: 0.0
+    calibration_status: initial_mechanical_measurement
+  thermal_camera_link:
+    parent: glasses_frame
+    translation_m:
+      x: 0.025
+      y: 0.0
+      z: 0.018
+    rotation_rpy_deg:
+      roll: 0.0
+      pitch: 0.0
+      yaw: 0.0
+    calibration_status: placeholder_until_thermal_bringup

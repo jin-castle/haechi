@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>imu</name>
+  <version>0.0.1</version>
+  <description>MPU6050-based IMU ROS2 publisher</description>
+
+  <maintainer email="1213tnals@naver.com">sumincho</maintainer>
+  <license>Apache License 2.0</license>
+
+  <!-- ament_python 패키지도 보통 ament_cmake를 buildtool로 둡니다 -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
+

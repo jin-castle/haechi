@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>haechi_cmake_compat</name>
+  <version>0.0.1</version>
+  <description>CMake compatibility helpers for building Haechi ROS 2 packages on Lyrical.</description>
+  <maintainer email="bgs43@example.com">bgs43</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

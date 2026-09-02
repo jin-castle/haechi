@@ -1,0 +1,10 @@
+datasets:
+  - id: missing-license
+    name: Missing License Dataset
+    url: https://example.invalid/missing-license
+    modality: RGB image
+    label_task: smoke detection fixture
+    access_method: fixture
+    access_notes: This fixture intentionally omits the license field.
+    planned_use: validator failure fixture
+    active: true

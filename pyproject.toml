@@ -1,0 +1,288 @@
+[project]
+name = "firesight-vision"
+version = "0.1.0"
+description = "Reproducible research scaffold for FireSight smoke vision."
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "Pillow>=10.4,<11",
+]
+
+[project.optional-dependencies]
+teed = [
+    "numpy>=1.26,<3",
+    "torch>=2.2,<3",
+]
+depth = [
+    "numpy>=1.26,<3",
+    "torch>=2.2,<3",
+    "transformers>=4.57.6,<5",
+]
+rosbag = [
+    "numpy>=1.26,<3",
+    "rosbags>=0.11,<0.12",
+]
+
+[project.scripts]
+generate-smoke-aug = "firesight_vision.generate_smoke_aug:main"
+run-hud-edge-baseline = "firesight_vision.run_hud_edge_baseline:main"
+run-edge-replay = "firesight_vision.run_edge_replay:main"
+run-teed-replay = "firesight_vision.run_teed_replay:main"
+run-teed-depth-replay = "firesight_vision.run_teed_depth_replay:main"
+extract-rosbag-depth-pairs = "firesight_vision.run_rosbag_depth_extract:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/firesight_vision", "scripts"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "README.md",
+    "pyproject.toml",
+    "src/firesight_vision/**",
+    "scripts/**",
+]
+
+[dependency-groups]
+dev = [
+    "basedpyright>=1.21",
+    "pytest>=8",
+    "ruff>=0.8",
+]
+
+[tool.firesight_vision]
+project_name = "firesight-smoke-vision"
+seed = 42
+evidence_root = ".omo/evidence/firesight-smoke-vision"
+
+[tool.basedpyright]
+typeCheckingMode = "all"
+pythonVersion = "3.11"
+pythonPlatform = "All"
+stubPath = "typings"
+include = ["src", "tests", "scripts"]
+exclude = [
+    "**/__pycache__",
+    "**/.venv",
+    "**/build",
+    "**/dist",
+    "src/firesight_vision/teed.py",
+    "src/firesight_vision/teed_model.py",
+    "src/firesight_vision/pidinet.py",
+    "src/firesight_vision/pidinet_model.py",
+    "src/firesight_vision/teed_replay.py",
+    "src/firesight_vision/run_teed_replay.py",
+    "src/firesight_vision/depth_anything.py",
+    "src/firesight_vision/teed_depth_replay.py",
+    "src/firesight_vision/run_teed_depth_replay.py",
+    "src/firesight_vision/rosbag_depth_extract.py",
+    "src/firesight_vision/run_rosbag_depth_extract.py",
+    "scripts/run_teed_replay.py",
+    "scripts/run_teed_depth_replay.py",
+    "scripts/run_teed_video_replay.py",
+    "scripts/analyze_edge_readiness.py",
+    "scripts/benchmark_edge_replay.py",
+    "scripts/build_jetson_nano_fire360_review.py",
+]
+reportMissingParameterType = "error"
+reportImplicitOverride = "none"
+reportPrivateUsage = "error"
+reportUnnecessaryTypeIgnoreComment = "error"
+reportUnusedVariable = "error"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 88
+src = ["src", "tests", "scripts"]
+extend-exclude = [
+    ".external",
+    "deploy/jetson_nano",
+    "ros2_ws",
+    "ros2_ws/build",
+    "ros2_ws/install",
+    "ros2_ws/log",
+    "ros2_ws/src/fusion_imu_radar",
+    "ros2_ws/src/haechi",
+    "ros2_ws/src/haechi_cmake_compat",
+    "ros2_ws/src/imu",
+    "ros2_ws/src/serial-ros2-master",
+    "ros2_ws/src/thermal_camera",
+    "ros2_ws/src/ti_mmwave_rospkg",
+    "ros2_ws/src/ti_mmwave_rospkg_msgs",
+]
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "COM812",
+    "CPY001",
+    "D100",
+    "D101",
+    "D103",
+    "D104",
+    "D105",
+    "D203",
+    "D213",
+    "FIX002",
+    "ISC001",
+    "TD002",
+    "TD003",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = [
+    "D",
+    "PLR2004",
+    "S101",
+    "S603",
+]
+"src/firesight_vision/teed.py" = [
+    "ANN401",
+    "D102",
+    "D107",
+]
+"src/firesight_vision/pidinet.py" = [
+    "ANN401",
+    "D102",
+    "D107",
+    "EM101",
+    "EM102",
+    "TRY003",
+]
+"src/firesight_vision/pidinet_model.py" = [
+    "D102",
+    "D107",
+    "FBT001",
+    "N812",
+]
+"src/firesight_vision/hud_edges.py" = [
+    "PLR0913",
+]
+"src/firesight_vision/teed_model.py" = [
+    "D102",
+    "D107",
+]
+"src/firesight_vision/depth_anything.py" = [
+    "ANN401",
+    "D102",
+    "D107",
+    "ICN001",
+    "PLC0415",
+]
+"src/firesight_vision/teed_depth_replay.py" = [
+    "PLR0913",
+    "PLR0915",
+]
+"src/firesight_vision/rosbag_depth_extract.py" = [
+    "ANN401",
+    "EM101",
+    "EM102",
+    "TRY003",
+]
+"scripts/run_teed_video_replay.py" = [
+    "PLR0915",
+    "PLR2004",
+]
+"scripts/analyze_edge_readiness.py" = [
+    "D102",
+    "EM101",
+    "EM102",
+    "PLR0915",
+    "TRY003",
+]
+"scripts/run_profiled_teed_videos.py" = [
+    "EM102",
+    "TRY003",
+]
+"scripts/build_fire360_model_evaluation.py" = [
+    "EM101",
+    "EM102",
+    "PLR2004",
+    "TRY003",
+]
+"scripts/build_fire360_pidinet_comparison.py" = [
+    "EM101",
+    "EM102",
+    "PLR2004",
+    "TRY003",
+]
+"scripts/benchmark_fire360_models.py" = [
+    "EM101",
+    "EM102",
+    "FBT001",
+    "PLR2004",
+    "TRY003",
+]
+"scripts/benchmark_edge_replay.py" = [
+    "D102",
+    "EM101",
+    "EM102",
+    "PERF401",
+    "PLR0913",
+    "PLR0915",
+    "PLR2004",
+    "TRY003",
+]
+"scripts/build_teed_jetson_latency_projection.py" = [
+    "E501",
+    "EM101",
+    "EM102",
+    "N802",
+    "PLR0913",
+    "PLR0915",
+    "TRY003",
+]
+"src/firesight_vision/canny.py" = [
+    "D102",
+    "D107",
+    "N802",
+    "N803",
+]
+"src/firesight_vision/deployment.py" = [
+    "D102",
+    "D107",
+    "PLR2004",
+]
+"scripts/run_firesight_deployment.py" = [
+    "ANN401",
+    "C901",
+    "N802",
+    "PLR0912",
+    "PLR0915",
+]
+"scripts/build_long_video_model_comparison.py" = [
+    "N802",
+    "PLR0913",
+    "PLR0915",
+]
+"scripts/benchmark_firesight_backends.py" = [
+    "EM101",
+    "EM102",
+    "PLR2004",
+    "TRY003",
+]
+"scripts/**/*.py" = [
+    "T201",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.format]
+docstring-code-format = true
+indent-style = "space"
+quote-style = "double"
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = [
+    "-ra",
+    "--strict-config",
+    "--strict-markers",
+]
+filterwarnings = ["error"]

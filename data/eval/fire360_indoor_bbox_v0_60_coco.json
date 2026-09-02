@@ -1,0 +1,1538 @@
+{
+  "info": {
+    "annotation_status": "draft_single_agent",
+    "human_review_status": "required_before_training_or_benchmark",
+    "source": "fire360_photo_inclusive_v0_60"
+  },
+  "licenses": [],
+  "images": [
+    {
+      "id": 1,
+      "file_name": "photo__test__-2022-04-05-195954_png_jpg.rf.b71c34594b9ab92af9c05d88f6779b30.jpg",
+      "width": 640,
+      "height": 640,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 2,
+      "file_name": "photo__train__-2022-04-05-195924_png_jpg.rf.266e62bd01acfb308a344ab027ce5031.jpg",
+      "width": 640,
+      "height": 640,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 3,
+      "file_name": "photo__valid__1014_jpg.rf.ee0255915e03654e8e164e38bbb8d49b.jpg",
+      "width": 640,
+      "height": 640,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 4,
+      "file_name": "photo__test__000039_jpg.rf.29e227f738bbc4e32317c0d77b53bafd.jpg",
+      "width": 416,
+      "height": 416,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 5,
+      "file_name": "photo__test__000122_jpg.rf.fe13b3583b657df230661e8fd753a238.jpg",
+      "width": 416,
+      "height": 416,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 6,
+      "file_name": "photo__valid__000692_jpg.rf.64524cf258cb55a892782007e41006f5.jpg",
+      "width": 416,
+      "height": 416,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 7,
+      "file_name": "photo__valid__000838_jpg.rf.6995f161450456670a68691f8c5963b9.jpg",
+      "width": 416,
+      "height": 416,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 8,
+      "file_name": "photo__test__000045_jpg.rf.e131acc8dd73826aee3ab5af488c2e1b.jpg",
+      "width": 416,
+      "height": 416,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 9,
+      "file_name": "photo__test__000050_jpg.rf.3567e9ee9340731c5c619ba64a1da758.jpg",
+      "width": 416,
+      "height": 416,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 10,
+      "file_name": "photo__test__000051_jpg.rf.f0f8cb8a06bd5390714ff417589737c5.jpg",
+      "width": 640,
+      "height": 640,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 11,
+      "file_name": "photo__test__000127_jpg.rf.d1e65bb626a199c7aaca0c5366f6d480.jpg",
+      "width": 416,
+      "height": 416,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 12,
+      "file_name": "photo__test__000133_jpg.rf.247604eda371adbcff2a6ef91d50d72a.jpg",
+      "width": 416,
+      "height": 416,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 13,
+      "file_name": "photo__test__000149_jpg.rf.5117b01daa9e9b2434c25e081d52d04d.jpg",
+      "width": 416,
+      "height": 416,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 14,
+      "file_name": "photo__test__000155_jpg.rf.a5b0e3313e42c55290b1c9ed71902934.jpg",
+      "width": 416,
+      "height": 416,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 15,
+      "file_name": "photo__test__000155_jpg.rf.d9ce50e4a2964f8407dfb170ab1fdbe7.jpg",
+      "width": 416,
+      "height": 416,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 16,
+      "file_name": "photo__test__000166_jpg.rf.40d8bf103906fff3ce55fd9e7a6fc6b9.jpg",
+      "width": 416,
+      "height": 416,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 17,
+      "file_name": "photo__train__000017_jpg.rf.4782338d3922c776f98fb4139d3a753f.jpg",
+      "width": 416,
+      "height": 416,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 18,
+      "file_name": "photo__train__000017_jpg.rf.fce207c07dd1921fc94f7a7d6ad96f49.jpg",
+      "width": 416,
+      "height": 416,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 19,
+      "file_name": "photo__train__000023_jpg.rf.6c4a4869aecf6e7e97f9824d67d7543d.jpg",
+      "width": 416,
+      "height": 416,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 20,
+      "file_name": "photo__train__000023_jpg.rf.a41c64205cdb3fd2abeef3dbf7ca03cc.jpg",
+      "width": 416,
+      "height": 416,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 21,
+      "file_name": "photo__train__000023_jpg.rf.bb7babb60bea99b0bde061620d615ddc.jpg",
+      "width": 416,
+      "height": 416,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 22,
+      "file_name": "photo__train__000034_jpg.rf.1ca33b25c227dd27f9839c9b66d20555.jpg",
+      "width": 416,
+      "height": 416,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 23,
+      "file_name": "photo__train__000034_jpg.rf.3d31040270780a561444cdc959e3780c.jpg",
+      "width": 416,
+      "height": 416,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 24,
+      "file_name": "photo__train__000034_jpg.rf.46438e8f506eef6335721215c8c3d1ce.jpg",
+      "width": 416,
+      "height": 416,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 25,
+      "file_name": "photo__train__000039_jpg.rf.224bee27908051063614fa70924a60da.jpg",
+      "width": 416,
+      "height": 416,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 26,
+      "file_name": "photo__train__000045_jpg.rf.582c9b4680f37cbf2733b3f8a5eb329a.jpg",
+      "width": 416,
+      "height": 416,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 27,
+      "file_name": "photo__train__000050_jpg.rf.756ba9307d7b45f0efc45ed7ea87b715.jpg",
+      "width": 416,
+      "height": 416,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 28,
+      "file_name": "photo__valid__000017_jpg.rf.4b7bdfbcab6309ff7760110536cb0dbf.jpg",
+      "width": 416,
+      "height": 416,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 29,
+      "file_name": "photo__valid__000045_jpg.rf.b673c96a9448bdb6f99f836cea2dec19.jpg",
+      "width": 416,
+      "height": 416,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 30,
+      "file_name": "photo__valid__000056_jpg.rf.6c6b95813dc6605dc4479628c2e4abfc.jpg",
+      "width": 416,
+      "height": 416,
+      "source_type": "photo_image"
+    },
+    {
+      "id": 31,
+      "file_name": "video__clip_02814_frame_000028.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 32,
+      "file_name": "video__clip_02814_frame_000172.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 33,
+      "file_name": "video__clip_02815_frame_000013.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 34,
+      "file_name": "video__clip_02824_frame_000139.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 35,
+      "file_name": "video__gopr8356_frame_000045.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 36,
+      "file_name": "video__gopr8356_frame_000409.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 37,
+      "file_name": "video__ifsi_video_4_frame_000056.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 38,
+      "file_name": "video__ifsi_video_4_frame_000397.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 39,
+      "file_name": "video__ifsi_video_8_frame_000120.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 40,
+      "file_name": "video__ifsi_video_8_frame_000420.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 41,
+      "file_name": "video__ifsi_video_8_frame_000600.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 42,
+      "file_name": "video__clip_02814_frame_000057.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 43,
+      "file_name": "video__clip_02814_frame_000143.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 44,
+      "file_name": "video__clip_02814_frame_000229.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 45,
+      "file_name": "video__clip_02815_frame_000027.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 46,
+      "file_name": "video__clip_02815_frame_000054.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 47,
+      "file_name": "video__clip_02815_frame_000096.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 48,
+      "file_name": "video__clip_02824_frame_000023.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 49,
+      "file_name": "video__clip_02824_frame_000069.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 50,
+      "file_name": "video__clip_02824_frame_000162.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 51,
+      "file_name": "video__clip_02824_frame_000231.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 52,
+      "file_name": "video__gopr8356_frame_000136.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 53,
+      "file_name": "video__gopr8356_frame_000272.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 54,
+      "file_name": "video__gopr8356_frame_000363.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 55,
+      "file_name": "video__ifsi_video_4_frame_000170.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 56,
+      "file_name": "video__ifsi_video_4_frame_000340.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 57,
+      "file_name": "video__ifsi_video_4_frame_000511.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 58,
+      "file_name": "video__ifsi_video_8_frame_000180.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 59,
+      "file_name": "video__ifsi_video_8_frame_000300.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    },
+    {
+      "id": 60,
+      "file_name": "video__ifsi_video_8_frame_000540.jpg",
+      "width": 1280,
+      "height": 720,
+      "source_type": "video_frame"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "door"
+    },
+    {
+      "id": 2,
+      "name": "person"
+    },
+    {
+      "id": 3,
+      "name": "exit"
+    },
+    {
+      "id": 4,
+      "name": "obstacle"
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": 2,
+      "category_id": 2,
+      "bbox": [
+        104.504,
+        178.059,
+        319.066,
+        459.831
+      ],
+      "area": 146716.438,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "yolo11n_coco_person",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 2,
+      "image_id": 31,
+      "category_id": 2,
+      "bbox": [
+        770.499,
+        10.327,
+        508.571,
+        698.367
+      ],
+      "area": 355169.204,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "yolo11n_coco_person",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 3,
+      "image_id": 32,
+      "category_id": 2,
+      "bbox": [
+        544.164,
+        5.329,
+        663.507,
+        705.548
+      ],
+      "area": 468136.037,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "yolo11n_coco_person",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 4,
+      "image_id": 32,
+      "category_id": 2,
+      "bbox": [
+        0.231,
+        96.296,
+        93.787,
+        610.101
+      ],
+      "area": 57219.542,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "yolo11n_coco_person",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 5,
+      "image_id": 33,
+      "category_id": 2,
+      "bbox": [
+        777.744,
+        420.53,
+        500.448,
+        294.343
+      ],
+      "area": 147303.366,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "yolo11n_coco_person",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 6,
+      "image_id": 36,
+      "category_id": 2,
+      "bbox": [
+        521.194,
+        193.627,
+        740.479,
+        517.997
+      ],
+      "area": 383565.901,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "yolo11n_coco_person",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 7,
+      "image_id": 37,
+      "category_id": 2,
+      "bbox": [
+        427.721,
+        284.696,
+        398.218,
+        430.978
+      ],
+      "area": 171623.197,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "yolo11n_coco_person",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 8,
+      "image_id": 39,
+      "category_id": 2,
+      "bbox": [
+        161.626,
+        5.204,
+        474.368,
+        706.487
+      ],
+      "area": 335134.825,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "yolo11n_coco_person",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 9,
+      "image_id": 42,
+      "category_id": 2,
+      "bbox": [
+        482.047,
+        20.618,
+        313.998,
+        650.398
+      ],
+      "area": 204223.671,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "yolo11n_coco_person",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 10,
+      "image_id": 42,
+      "category_id": 2,
+      "bbox": [
+        545.061,
+        4.762,
+        731.52,
+        699.644
+      ],
+      "area": 511803.579,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "yolo11n_coco_person",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 11,
+      "image_id": 43,
+      "category_id": 2,
+      "bbox": [
+        774.491,
+        4.328,
+        504.22,
+        702.25
+      ],
+      "area": 354088.495,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "yolo11n_coco_person",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 12,
+      "image_id": 44,
+      "category_id": 2,
+      "bbox": [
+        118.143,
+        16.718,
+        783.384,
+        692.191
+      ],
+      "area": 542251.354,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "yolo11n_coco_person",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 13,
+      "image_id": 44,
+      "category_id": 2,
+      "bbox": [
+        1080.728,
+        5.443,
+        198.134,
+        705.601
+      ],
+      "area": 139803.549,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "yolo11n_coco_person",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 14,
+      "image_id": 48,
+      "category_id": 2,
+      "bbox": [
+        513.256,
+        253.133,
+        418.51,
+        462.925
+      ],
+      "area": 193738.742,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "yolo11n_coco_person",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 15,
+      "image_id": 52,
+      "category_id": 2,
+      "bbox": [
+        2.296,
+        212.379,
+        650.888,
+        498.795
+      ],
+      "area": 324659.68,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "yolo11n_coco_person",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 16,
+      "image_id": 53,
+      "category_id": 2,
+      "bbox": [
+        5.787,
+        2.978,
+        921.359,
+        703.276
+      ],
+      "area": 647969.672,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "yolo11n_coco_person",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 17,
+      "image_id": 59,
+      "category_id": 2,
+      "bbox": [
+        208.654,
+        145.081,
+        842.665,
+        567.274
+      ],
+      "area": 478021.945,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "yolo11n_coco_person",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 18,
+      "image_id": 2,
+      "category_id": 1,
+      "bbox": [
+        332.8,
+        38.4,
+        217.6,
+        550.4
+      ],
+      "area": 119767.04,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_photo_door",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 19,
+      "image_id": 2,
+      "category_id": 3,
+      "bbox": [
+        332.8,
+        38.4,
+        217.6,
+        550.4
+      ],
+      "area": 119767.04,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_photo_egress",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 20,
+      "image_id": 6,
+      "category_id": 1,
+      "bbox": [
+        216.32,
+        24.96,
+        141.44,
+        357.76
+      ],
+      "area": 50601.574,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_photo_door",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 21,
+      "image_id": 6,
+      "category_id": 3,
+      "bbox": [
+        216.32,
+        24.96,
+        141.44,
+        357.76
+      ],
+      "area": 50601.574,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_photo_egress",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 22,
+      "image_id": 7,
+      "category_id": 4,
+      "bbox": [
+        0.0,
+        228.8,
+        291.2,
+        166.4
+      ],
+      "area": 48455.68,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_photo_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 23,
+      "image_id": 31,
+      "category_id": 4,
+      "bbox": [
+        64.0,
+        396.0,
+        704.0,
+        273.6
+      ],
+      "area": 192614.4,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_fire360_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 24,
+      "image_id": 32,
+      "category_id": 4,
+      "bbox": [
+        64.0,
+        396.0,
+        704.0,
+        273.6
+      ],
+      "area": 192614.4,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_fire360_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 25,
+      "image_id": 33,
+      "category_id": 4,
+      "bbox": [
+        64.0,
+        396.0,
+        704.0,
+        273.6
+      ],
+      "area": 192614.4,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_fire360_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 26,
+      "image_id": 34,
+      "category_id": 4,
+      "bbox": [
+        64.0,
+        396.0,
+        704.0,
+        273.6
+      ],
+      "area": 192614.4,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_fire360_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 27,
+      "image_id": 35,
+      "category_id": 4,
+      "bbox": [
+        64.0,
+        396.0,
+        704.0,
+        273.6
+      ],
+      "area": 192614.4,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_fire360_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 28,
+      "image_id": 36,
+      "category_id": 4,
+      "bbox": [
+        64.0,
+        396.0,
+        704.0,
+        273.6
+      ],
+      "area": 192614.4,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_fire360_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 29,
+      "image_id": 37,
+      "category_id": 4,
+      "bbox": [
+        64.0,
+        396.0,
+        704.0,
+        273.6
+      ],
+      "area": 192614.4,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_fire360_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 30,
+      "image_id": 38,
+      "category_id": 4,
+      "bbox": [
+        64.0,
+        396.0,
+        704.0,
+        273.6
+      ],
+      "area": 192614.4,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_fire360_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 31,
+      "image_id": 39,
+      "category_id": 1,
+      "bbox": [
+        51.2,
+        28.8,
+        537.6,
+        619.2
+      ],
+      "area": 332881.92,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_thermal_door",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 32,
+      "image_id": 39,
+      "category_id": 3,
+      "bbox": [
+        51.2,
+        28.8,
+        537.6,
+        619.2
+      ],
+      "area": 332881.92,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_thermal_egress",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 33,
+      "image_id": 39,
+      "category_id": 4,
+      "bbox": [
+        51.2,
+        374.4,
+        742.4,
+        288.0
+      ],
+      "area": 213811.2,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_thermal_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 34,
+      "image_id": 40,
+      "category_id": 1,
+      "bbox": [
+        51.2,
+        28.8,
+        537.6,
+        619.2
+      ],
+      "area": 332881.92,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_thermal_door",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 35,
+      "image_id": 40,
+      "category_id": 3,
+      "bbox": [
+        51.2,
+        28.8,
+        537.6,
+        619.2
+      ],
+      "area": 332881.92,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_thermal_egress",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 36,
+      "image_id": 40,
+      "category_id": 4,
+      "bbox": [
+        51.2,
+        374.4,
+        742.4,
+        288.0
+      ],
+      "area": 213811.2,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_thermal_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 37,
+      "image_id": 41,
+      "category_id": 1,
+      "bbox": [
+        51.2,
+        28.8,
+        537.6,
+        619.2
+      ],
+      "area": 332881.92,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_thermal_door",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 38,
+      "image_id": 41,
+      "category_id": 3,
+      "bbox": [
+        51.2,
+        28.8,
+        537.6,
+        619.2
+      ],
+      "area": 332881.92,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_thermal_egress",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 39,
+      "image_id": 41,
+      "category_id": 4,
+      "bbox": [
+        51.2,
+        374.4,
+        742.4,
+        288.0
+      ],
+      "area": 213811.2,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_thermal_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 40,
+      "image_id": 42,
+      "category_id": 4,
+      "bbox": [
+        64.0,
+        396.0,
+        704.0,
+        273.6
+      ],
+      "area": 192614.4,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_fire360_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 41,
+      "image_id": 43,
+      "category_id": 4,
+      "bbox": [
+        64.0,
+        396.0,
+        704.0,
+        273.6
+      ],
+      "area": 192614.4,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_fire360_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 42,
+      "image_id": 44,
+      "category_id": 4,
+      "bbox": [
+        64.0,
+        396.0,
+        704.0,
+        273.6
+      ],
+      "area": 192614.4,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_fire360_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 43,
+      "image_id": 45,
+      "category_id": 4,
+      "bbox": [
+        64.0,
+        396.0,
+        704.0,
+        273.6
+      ],
+      "area": 192614.4,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_fire360_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 44,
+      "image_id": 46,
+      "category_id": 4,
+      "bbox": [
+        64.0,
+        396.0,
+        704.0,
+        273.6
+      ],
+      "area": 192614.4,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_fire360_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 45,
+      "image_id": 47,
+      "category_id": 4,
+      "bbox": [
+        64.0,
+        396.0,
+        704.0,
+        273.6
+      ],
+      "area": 192614.4,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_fire360_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 46,
+      "image_id": 48,
+      "category_id": 4,
+      "bbox": [
+        64.0,
+        396.0,
+        704.0,
+        273.6
+      ],
+      "area": 192614.4,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_fire360_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 47,
+      "image_id": 49,
+      "category_id": 4,
+      "bbox": [
+        64.0,
+        396.0,
+        704.0,
+        273.6
+      ],
+      "area": 192614.4,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_fire360_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 48,
+      "image_id": 50,
+      "category_id": 4,
+      "bbox": [
+        64.0,
+        396.0,
+        704.0,
+        273.6
+      ],
+      "area": 192614.4,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_fire360_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 49,
+      "image_id": 51,
+      "category_id": 4,
+      "bbox": [
+        64.0,
+        396.0,
+        704.0,
+        273.6
+      ],
+      "area": 192614.4,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_fire360_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 50,
+      "image_id": 52,
+      "category_id": 4,
+      "bbox": [
+        64.0,
+        396.0,
+        704.0,
+        273.6
+      ],
+      "area": 192614.4,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_fire360_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 51,
+      "image_id": 53,
+      "category_id": 4,
+      "bbox": [
+        64.0,
+        396.0,
+        704.0,
+        273.6
+      ],
+      "area": 192614.4,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_fire360_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 52,
+      "image_id": 54,
+      "category_id": 4,
+      "bbox": [
+        64.0,
+        396.0,
+        704.0,
+        273.6
+      ],
+      "area": 192614.4,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_fire360_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 53,
+      "image_id": 55,
+      "category_id": 4,
+      "bbox": [
+        64.0,
+        396.0,
+        704.0,
+        273.6
+      ],
+      "area": 192614.4,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_fire360_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 54,
+      "image_id": 56,
+      "category_id": 4,
+      "bbox": [
+        64.0,
+        396.0,
+        704.0,
+        273.6
+      ],
+      "area": 192614.4,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_fire360_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 55,
+      "image_id": 57,
+      "category_id": 4,
+      "bbox": [
+        64.0,
+        396.0,
+        704.0,
+        273.6
+      ],
+      "area": 192614.4,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_fire360_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 56,
+      "image_id": 58,
+      "category_id": 1,
+      "bbox": [
+        51.2,
+        28.8,
+        537.6,
+        619.2
+      ],
+      "area": 332881.92,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_thermal_door",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 57,
+      "image_id": 58,
+      "category_id": 3,
+      "bbox": [
+        51.2,
+        28.8,
+        537.6,
+        619.2
+      ],
+      "area": 332881.92,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_thermal_egress",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 58,
+      "image_id": 58,
+      "category_id": 4,
+      "bbox": [
+        51.2,
+        374.4,
+        742.4,
+        288.0
+      ],
+      "area": 213811.2,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_thermal_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 59,
+      "image_id": 59,
+      "category_id": 1,
+      "bbox": [
+        51.2,
+        28.8,
+        537.6,
+        619.2
+      ],
+      "area": 332881.92,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_thermal_door",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 60,
+      "image_id": 59,
+      "category_id": 3,
+      "bbox": [
+        51.2,
+        28.8,
+        537.6,
+        619.2
+      ],
+      "area": 332881.92,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_thermal_egress",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 61,
+      "image_id": 59,
+      "category_id": 4,
+      "bbox": [
+        51.2,
+        374.4,
+        742.4,
+        288.0
+      ],
+      "area": 213811.2,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_thermal_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 62,
+      "image_id": 60,
+      "category_id": 1,
+      "bbox": [
+        51.2,
+        28.8,
+        537.6,
+        619.2
+      ],
+      "area": 332881.92,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_thermal_door",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 63,
+      "image_id": 60,
+      "category_id": 3,
+      "bbox": [
+        51.2,
+        28.8,
+        537.6,
+        619.2
+      ],
+      "area": 332881.92,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_thermal_egress",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    },
+    {
+      "id": 64,
+      "image_id": 60,
+      "category_id": 4,
+      "bbox": [
+        51.2,
+        374.4,
+        742.4,
+        288.0
+      ],
+      "area": 213811.2,
+      "iscrowd": 0,
+      "attributes": {
+        "source": "manual_draft_thermal_obstacle",
+        "human_review_status": "required_before_training_or_benchmark"
+      }
+    }
+  ]
+}

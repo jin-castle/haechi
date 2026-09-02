@@ -1,0 +1,64 @@
+{
+  "timestamp": "2026-07-03T12:00:00Z",
+  "frame_id": "frame-000001",
+  "camera": {
+    "sensor_id": "rgb-front",
+    "image_uri": "frames/rgb/frame-000001.jpg",
+    "intrinsics": {
+      "model": "pinhole",
+      "width": 1920,
+      "height": 1080,
+      "fx": 910.0,
+      "fy": 908.5,
+      "cx": 960.0,
+      "cy": 540.0,
+      "distortion": [0.01, -0.02, 0.0, 0.0, 0.0]
+    },
+    "extrinsics": {
+      "target_frame": "body",
+      "translation_m": [0.02, 0.0, 0.08],
+      "quaternion_xyzw": [0.0, 0.0, 0.0, 1.0]
+    }
+  },
+  "thermal": {
+    "sensor_id": "thermal-front",
+    "frame_uri": "frames/thermal/frame-000001.tiff",
+    "encoding": "radiometric_u16",
+    "width": 640,
+    "height": 512,
+    "temperature_unit": "raw_counts"
+  },
+  "mmwave": {
+    "sensor_id": "mmwave-front",
+    "point_cloud": [
+      {
+        "x_m": 1.2,
+        "y_m": -0.4,
+        "z_m": 0.8,
+        "range_m": 1.5,
+        "velocity_mps": -0.1,
+        "bearing_rad": -0.32,
+        "intensity": 18.4
+      }
+    ]
+  },
+  "imu_ahrs": {
+    "sensor_id": "imu-body",
+    "orientation_quaternion_xyzw": [0.0, 0.0, 0.0, 1.0],
+    "angular_velocity_radps": [0.01, 0.0, -0.01],
+    "linear_acceleration_mps2": [0.0, 0.0, 9.81],
+    "pose": {
+      "frame": "body",
+      "translation_m": [0.0, 0.0, 0.0],
+      "quaternion_xyzw": [0.0, 0.0, 0.0, 1.0]
+    }
+  },
+  "calibration": {
+    "calibration_id": "calib-2026-07-03-lab",
+    "camera_imu_reference": "calibration/kalibr/camera_imu.yaml",
+    "mmwave_reference": "calibration/mmwave/front_radar.json",
+    "thermal_reference": "calibration/thermal/front_thermal.json",
+    "valid_from": "2026-07-03T00:00:00Z",
+    "notes": "Placeholder metadata for offline alignment; no live fusion."
+  }
+}
