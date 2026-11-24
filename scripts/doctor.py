@@ -48,7 +48,6 @@ REQUIRED_PATHS = (
     Path("scripts"),
     Path("data/registry"),
     Path("reports"),
-    Path(".omo/evidence/firesight-smoke-vision"),
 )
 
 
