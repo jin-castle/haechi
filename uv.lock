@@ -198,6 +198,7 @@ teed = [
 [package.dev-dependencies]
 dev = [
     { name = "basedpyright" },
+    { name = "numpy" },
     { name = "pytest" },
     { name = "ruff" },
 ]
@@ -218,6 +219,7 @@ provides-extras = ["teed", "depth", "rosbag"]
 [package.metadata.requires-dev]
 dev = [
     { name = "basedpyright", specifier = ">=1.21" },
+    { name = "numpy", specifier = ">=1.26,<3" },
     { name = "pytest", specifier = ">=8" },
     { name = "ruff", specifier = ">=0.8" },
 ]
